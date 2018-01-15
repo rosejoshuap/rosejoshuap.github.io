@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About | Joshua Rose</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Social Media Icons--> 
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/Rose-favicon.png">
+    
+    <style>
+		
+		section button {
+			margin-top: 2em;
+			margin-bottom: 100px;
+		}
+		
+		section P {
+			max-width: 1000px; 
+			text-align: left;
+			margin-bottom: 1.5em;
+		}
+		
+		section img {
+			margin-bottom: 5px;
+		}
+		
+		@media (min-width: 901px) {
+			section {
+				margin-top: 130px;
+			}
+		}
+
+    </style>
+  </head>
+  
+  <body>
+
+    <header>
+    
+      <div class="desktop-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a class="current-item" href="about.html">About</a> 
+          <a href="showreel.html">Showreel</a>
+          <a href="photography.html">Photography</a>    
+          <a href="web.html">Web Design</a>
+          <a href="contact.html">Contact</a>    
+        </nav>
+      </div>
+        
+      <div class="mobile-nav">
+        <div id="mySidenav" class="sidenav">
+         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+			<a class="current-item" href="about.html"><li>About</li></a>  
+            <a href="showreel.html"><li>Showreel</li></a>
+            <a href="photography.html"><li>Photography</li></a>  
+            <a href="web.html"><li>Web Design</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>    
+        </div>       
+        
+      <a href="javascript:void(0)" id="hamburger" class="closebtn" onclick="myFunction(this);toggleNav();">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>  
+		  
+		<script>
+		function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "250px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "250px";
+    }
+} 
+		</script>
+    <script>
+    function myFunction(x) {
+             x.classList.toggle("change");
+           }    
+    </script>
+
+    </div>      
+    
+    </header>
+      
+    <section>
+      <div class="row">
+        <div class="col-12">
+		  <h3>About</h3>
+		  <h4>Filmmaker .  Storyteller . </h4>	
+		</div>
+	  </div>
+	  <div class="row">
+	    <div class="col-12">
+		  <p>As a filmmaker, we are constantly running into problems on set; no matter how crazy the director’s vision, it’s on the crew to bring it to life.  One day while shooting a film with Rich Brauer, he wanted a dolly shot of the lead actress peering through a telescopic camera lens.  This would have been a simple task except for one glaring problem: He wanted her on top of a steep knoll!  An inexperienced filmmaker at the time, I thought Rich was out of his mind!  How on earth are we going to get that 400 lbs dolly to move horizontally on a steep hill? </p>
+		  <p>Rich may have been crazy, but that didn’t matter: it was HIS vision and it was OUR job to figure out how to pull it off.  After a little bit of brainstorming, the team had a plan: we would grab all the apple boxes from set and stagger them on the hill so the track could sit flat.  To make the tracks as level as possible, we inserted wedges under the slats.  Our crazy plan worked and the “impossible” shot was successfully pulled off.  Here’s a picture of our creation:</p>
+		  <img src="images/gvsu-filmjpg-cffcdb179226d24b.jpg" alt="The dolly on the hill"/>
+		  <h6>Photo credit: Brian McVicar, Mlive</h6>	
+		  <p>What does this have to do with web design?  Just like filmmaking, web design is a process of solving problems creatively - but instead of apple boxes and sandbags we use divs and clearfix.  If a client requires something seemingly impossible to pull off I think about that shoot with Rich Brauer I scour StackOverflow and W3schools until I know how it’s done.  If the task is truly impossible, I come up with a new way to achieve the client’s goal. </p>	
+		  <p>Where there is a will, there is always a way - even if you have to think outside (or on top) the apple box. </p>	
+		</div>
+	  </div>
+	  <div class="row">
+	    <div class="col-12">
+		  <a href="resume.pdf"><button>View Resume</button></a>
+		</div>
+	  </div>
+    </section> 
+      
+    <footer>
+    
+      <h5>&copy; Joshua Rose, 2017.  All Rights Reserved.</h5>
+    
+    </footer>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Design - AGA Entertainment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Social Media Icons--> 
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:600i,700i" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/Rose-favicon.png">
+    
+    <style>
+
+		section button {
+			margin-top: 2em;
+			margin-bottom: 100px;
+		}
+		
+		section P {
+			max-width: 1000px; 
+			text-align: left;
+			margin-bottom: 1.5em;
+		}
+		
+		section img {
+			margin-bottom: 5px;
+		}
+		
+		@media (min-width: 901px) {
+			section {
+				margin-top: 130px;
+			}
+		}
+
+    </style>
+  </head>
+  
+  <body>
+
+    <header>
+    
+      <div class="desktop-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a> 
+          <a href="showreel.html">Showreel</a>
+          <a href="photography.html">Photography</a>    
+          <a class="current-item" href="web.html">Web Design</a>
+          <a href="contact.html">Contact</a>    
+        </nav>
+      </div>
+        
+      <div class="mobile-nav">
+        <div id="mySidenav" class="sidenav">
+         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+			<a href="about.html"><li>About</li></a>  
+            <a href="showreel.html"><li>Showreel</li></a>
+            <a href="photography.html"><li>Photography</li></a>  
+            <a class="current-item" href="web.html"><li>Web Design</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>    
+        </div>       
+        
+      <a href="javascript:void(0)" id="hamburger" class="closebtn" onclick="myFunction(this);toggleNav();">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>  
+		  
+		<script>
+		function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "250px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "250px";
+    }
+} 
+		</script>
+    <script>
+    function myFunction(x) {
+             x.classList.toggle("change");
+           }    
+    </script>
+
+    </div>      
+    
+    </header>
+      
+    <section>
+      <div class="row">
+        <div class="col-12">
+		  <h3>AGA Entertainment</h3>
+		</div>
+	  </div>
+	<div class="row">
+	  <div class="col-12">
+	    <a href="#">
+		  <img src="images/webthumb-AGA.jpg" alt="AGA Entertainment"/> 
+		</a>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <p>“AGA Entertainment Ltd.” is a partnership between myself, Tyler Scott <a href="web_tylerscottillusionist.html">(the magician whose site I’ve built here)</a>, and a few other creatives.  Our goal is to produce one-of-a-kind entertainment experience whether it’s film, magic, web series, or more.</p>
+		<p>With a brand so diverse, it was incredibly difficult to display it all concisely.  This is made all the harder as there are no production companies that do quite what AGA does.  To ensure the site is focused and consistent, I first had to define what it’s purpose was: to encourage visitors to explore our content and book us for gigs or come to our shows.  Every element needs to contribute to one or both of those goals or the site will become a confusing mess. </p>
+		<p>When visitors arrive at the site, the are met with a carousel that highlights our latest projects.  This provides context and a visual glimpse of what our partnership is about.  Below that is a description of the brand that explains why it exists and how it works.  Finally, three image modules highlight what AGA provides: Films, Live Magic, and Creative Solutions.  This same formula: “VISUAL CONTEXT &rarr; WHY &rarr; HOW &rarr; WHAT” is maintained across each page.</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <img src="images/web-AGA-modules.jpg" alt="The image modules and description copy"/>
+		<h6>Yes, I know the images are ugly and don't fit.  This site is still under construction and the image and text are placeholders.</h6>  
+	  </div>
+	</div>
+	<div class="row"  style="margin-bottom: 25px;">
+	  <div class="col-4">
+	    <img src="images/web-AGA-mobile.jpg" alt="mobile version of the site"/>
+	  </div>
+	  <div class="col-7">
+	    <p> Another struggle was integrating the logo with the site.  Our logo has two variants: a complete version with our full name and second with just the “buckle.”  To keep with the aforementioned formula, It is important that our logo is immediately visible.  I accomplished this by placing the “buckle” in the center of the nav with two ul’s floated to each side.  This way, emphasis is immediately placed on our logo which adorns the nav like a belt buckle.</p>
+		<p>On the mobile version, I consolidated the nav into a dropdown menu, allowing visitors to navigate our site easily without taking up too much space on their phones. </p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <!--<a href="#"><button>View Site</button></a>-->
+	  </div>
+	</div>
+
+    </section> 
+      
+    <footer>
+    
+      <h5>&copy; Joshua Rose, 2017.  All Rights Reserved.</h5>
+    
+    </footer>

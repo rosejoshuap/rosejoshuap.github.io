@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Design - Joshua Rose</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Social Media Icons--> 
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:600i,700i" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/Rose-favicon.png">
+    
+    <style>
+
+		section button {
+			margin-top: 2em;
+			margin-bottom: 100px;
+		}
+		
+		section P {
+			max-width: 1000px; 
+			text-align: left;
+			margin-bottom: 1.5em;
+		}
+		
+		section img {
+			margin-bottom: 5px;
+		}
+		
+		@media (min-width: 901px) {
+			section {
+				margin-top: 130px;
+			}
+		}
+
+    </style>
+  </head>
+  
+  <body>
+
+    <header>
+    
+      <div class="desktop-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a> 
+          <a href="showreel.html">Showreel</a>
+          <a href="photography.html">Photography</a>    
+          <a class="current-item" href="web.html">Web Design</a>
+          <a href="contact.html">Contact</a>    
+        </nav>
+      </div>
+        
+      <div class="mobile-nav">
+        <div id="mySidenav" class="sidenav">
+         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+			<a href="about.html"><li>About</li></a>  
+            <a href="showreel.html"><li>Showreel</li></a>
+            <a href="photography.html"><li>Photography</li></a>  
+            <a class="current-item" href="web.html"><li>Web Design</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>    
+        </div>       
+        
+      <a href="javascript:void(0)" id="hamburger" class="closebtn" onclick="myFunction(this);toggleNav();">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>  
+		  
+		<script>
+		function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "250px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "250px";
+    }
+} 
+		</script>
+    <script>
+    function myFunction(x) {
+             x.classList.toggle("change");
+           }    
+    </script>
+
+    </div>      
+    
+    </header>
+      
+    <section>
+      <div class="row">
+        <div class="col-12">
+		  <h3>Joshua Rose</h3>
+		</div>
+	  </div>
+	<div class="row">
+	  <div class="col-12">
+	    <a href="http://www.joshua-rose.net/">
+		  <img src="images/webthumb-JRP.jpg" alt="Joshua Rose"/> 
+		</a>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <p>Okay, I know it’s tacky to put this website on my portfolio page, but I really struggled with this one and I want to share my thought process.</p>
+		<p>I’ve overhauled the look of this website several times since I started it, unable to settle on a design choice.  First, I wanted to create something similar to filmmaker, <a href="https://main.philipbloom.net/">Philip Bloom's</a>, website as he is a major inspiration of mine.  However, it soon became apparent that this template would not work for me as Philip possesses over 20 years of experience and countless photos of him working around the world.  I’m not quite at his level yet and attempting to fill my site with as much content as he has would only emphasize my lack of experience.</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-6">
+	    <img src="images/web-philip-bloom-homepage.jpg" alt="Philip Bloom's home page"/>
+	  </div>
+	  <div class="col-6">
+	    <img src="images/web-joshua-rose-philip-bloom.jpg" alt="My first design"/>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <p>Finding inspiration in the more minimalistic site of <a href="http://www.dannycooke.co.uk/">Danny Cooke</a>, I created a banner that looped my demo reel (which was a lot easier than I expected) and placed the reel again below it.  I felt this was a good design as the very first thing visitors saw would be my video work.</p>
+		<p>I signed up for a Hostagtor account (10/10 would recommend), uploading my website, and gazed with pride at my hard work.  Sadly, that pride turned to shame when a friend tried to view the site on their cell phone.  THERE WAS NO MOBILE VERSION!  Not only did the site look awful on mobile, images took forever to load because I didn’t consider mobile processor speeds or cellular connections.  </p>
+		<p>I researched mobile-first web design and quickly learned how to make a website look great on any device.  As I rebuilt my website from scratch, I became dissatisfied with my design choices.  I wanted to incorporate my rose logo, but the red banner made this difficult.  I attempted making the banner blue, but it just seemed unprofessional (though it did have a cool new wave vibe).  I even gave up on the banner entirely, but the lonely text amidst a charcoal void made the site feel empty and lifeless. </p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-6">
+	    <img src="images/web-joshua-rose-ver1.jpg" alt="The red banner version of my site"/>
+	  </div>
+	  <div class="col-6">
+	    <img src="images/web-joshua-rose-ver2.jpg" alt="The bland version of my site"/>
+	  </div>
+	  </div>
+	<div class="row">
+	  <div class="col-12">
+	    <p>I searched the web for inspiration and found it in a WiX template.  This template had the header and footer sections in fixed positions to create a letterbox effect akin to a movie.  The dense sans-serif font coupled with an italic serif subtitle created a west-coast feel reminiscent of Hollywood.  Behind everything was a landscape of a mountain valley to give it a sense of breadth.  I borrowed these elements and mixed it with my previous designs to create this current version.  Instead of a banner, the home page is a loop of my demo reel and when viewed on a 16:9 screen, the header and footer gives the viewer a feeling of watching a movie.  Not only does my site look great on all devices, I believe I have something that truly screams “filmmaker.”  </p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <a href="http://www.joshua-rose.net/"><button>View Site</button></a>
+	  </div>
+	</div>
+
+    </section> 
+      
+    <footer>
+    
+      <h5>&copy; Joshua Rose, 2017.  All Rights Reserved.</h5>
+    
+    </footer>

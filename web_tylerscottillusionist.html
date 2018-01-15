@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Design - Tyler Scott Illusionist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Social Media Icons--> 
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:600i,700i" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/Rose-favicon.png">
+    
+    <style>
+
+		section button {
+			margin-top: 2em;
+			margin-bottom: 100px;
+		}
+		
+		section P {
+			max-width: 1000px; 
+			text-align: left;
+			margin-bottom: 1.5em;
+		}
+		
+		section img {
+			margin-bottom: 5px;
+		}
+		
+		@media (min-width: 901px) {
+			section {
+				margin-top: 130px;
+			}
+		}
+
+    </style>
+  </head>
+  
+  <body>
+
+    <header>
+    
+      <div class="desktop-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a> 
+          <a href="showreel.html">Showreel</a>
+          <a href="photography.html">Photography</a>    
+          <a class="current-item" href="web.html">Web Design</a>
+          <a href="contact.html">Contact</a>    
+        </nav>
+      </div>
+        
+      <div class="mobile-nav">
+        <div id="mySidenav" class="sidenav">
+         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+			<a href="about.html"><li>About</li></a>  
+            <a href="showreel.html"><li>Showreel</li></a>
+            <a href="photography.html"><li>Photography</li></a>  
+            <a class="current-item" href="web.html"><li>Web Design</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>    
+        </div>      
+        
+      <a href="javascript:void(0)" id="hamburger" class="closebtn" onclick="myFunction(this);toggleNav();">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>  
+		  
+		<script>
+		function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "250px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "250px";
+    }
+} 
+		</script>
+    <script>
+    function myFunction(x) {
+             x.classList.toggle("change");
+           }    
+    </script>
+
+    </div>      
+    
+    </header>
+      
+    <section>
+      <div class="row">
+        <div class="col-12">
+		  <h3>Tyler Scott Illusionist</h3>
+		</div>
+	  </div>
+	<div class="row">
+	  <div class="col-12">
+	    <a href="web_tylerscottillusionist.html">
+		  <img src="images/webthumb-TSI.jpg" alt="Tyler Scott Illusionist"/> 
+		</a>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-3">
+	    <img src="images/web-TSI-mobile.jpg" alt="Mobile site"/>
+	  </div>	
+	  <div class="col-7">
+	    <p>Tyler Scott is an up and coming magician and needs a website so potential clients can easily learn about him and book gigs.  Because he's only been in the business for a few years, there isn’t much content in terms of photos or reviews to put on his site.</p>
+		<p>To make make the most of what he does have, I took the less-is-more approach - using a single page format with a large, striking banner.  This way, I can focus the client's attention to Tyler’s demo reel and contact form, which are the two most important elements of the website.  There is just enough information to spurn the client’s interest, but the rest is a mystery.  Kind of fitting for a magician!</p>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <h4>Gallery</h4>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <img src="images/web-TSI-about.jpg" alt="About section"/>
+	  </div>
+	</div>
+	<div class="row"  style="margin-bottom: 15px;">
+	  <div class="col-6">
+	    <img src="images/web-TSI-booking.jpg" alt="Booking section"/>
+	  </div>
+	  <div class="col-6">
+	    <img src="images/web-TSI-footer.jpg" alt="Footer section"/>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12">
+	    <!--<a href="#"><button>View Site</button></a>-->
+	  </div>
+	</div>
+
+    </section> 
+      
+    <footer>
+    
+      <h5>&copy; Joshua Rose, 2017.  All Rights Reserved.</h5>
+    
+    </footer>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show Reel | Joshua Rose</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Social Media Icons--> 
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:600i,700i" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/Rose-favicon.png">
+    
+    <style>
+
+		section .col-12 {
+			text-align: center;
+		}
+		
+		section button {
+			margin-top: 2em;
+		}
+		
+		section P {
+			max-width: 1000px; 
+			text-align: center;
+		}
+		
+		@media (min-width: 1024px) {
+			section {
+				margin-top: 150px;
+				margin-bottom: 200px;
+			}
+		}
+
+    </style>
+  </head>
+  
+  <body>
+
+    <header>
+    
+      <div class="desktop-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a> 
+          <a href="showreel.html">Showreel</a>
+          <a class="current-item" href="photography.html">Photography</a>    
+          <a href="web.html">Web Design</a>
+          <a href="contact.html">Contact</a>    
+        </nav>
+      </div>
+        
+      <div class="mobile-nav">
+        <div id="mySidenav" class="sidenav">
+         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+			<a href="about.html"><li>About</li></a>  
+            <a href="showreel.html"><li>Showreel</li></a>
+            <a class="current-item" href="photography.html"><li>Photography</li></a>  
+            <a href="web.html"><li>Web Design</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>    
+        </div>      
+        
+      <a href="javascript:void(0)" id="hamburger" class="closebtn" onclick="myFunction(this);toggleNav();">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>  
+		  
+		<script>
+		function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "250px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "250px";
+    }
+} 
+		</script>
+    <script>
+    function myFunction(x) {
+             x.classList.toggle("change");
+           }    
+    </script>
+
+    </div>      
+    
+    </header>
+      
+    <section>
+      <div class="row">
+        <div class="col-12">
+		  <h3>Photography</h3>
+		</div>
+	  </div>
+	  
+      <div class="masonry">
+          <div class="item"><a href="images/Anissa-Oct-2016.JPG" class="lightbox_trigger"><img src="images/Anissa-Oct-2016.JPG"/></a></div>
+        <div class="item"><a href="images/RonBeach2.JPG" class="lightbox_trigger"><img src="images/RonBeach2.JPG"/></a></div>
+        <div class="item"><a href="images/cabin1.png" class="lightbox_trigger"><img src="images/cabin1.png"/></a></div>
+        <div class="item"><a href="images/IMG_0173.JPG" class="lightbox_trigger"><img src="images/IMG_0173.JPG"/></a></div>
+        <div class="item"><a href="images/tylerscott-illusionist-notext.jpg" class="lightbox_trigger"><img src="images/tylerscott-illusionist-notext.jpg"/></a></div>
+        <div class="item"><a href="images/Headlands-9-17_3.png" class="lightbox_trigger"><img src="images/Headlands-9-17_3.png"/></a></div> 
+        <div class="item"><a href="images/00017.00_00_32_23.Still004.png" class="lightbox_trigger"><img src="images/00017.00_00_32_23.Still004.png"/></a></div>  
+        <div class="item"><a href="images/selfie8.png" class="lightbox_trigger"><img src="images/selfie8.png"/></a></div>  
+      </div>
+        
+      <div class="row">
+        <div class="col-12">
+          <h4><a href="https://www.instagram.com/joshuarosepictures/">View more on Instagram</a></h4>
+        </div>
+      </div>    
+        
+      <!--<div id="lightbox">
+        <p>Click to close</p>
+        <div id="lb-content">
+          <img src="#"/>
+        </div>
+      </div> -->   
+    
+    <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+    
+    <script>
+jQuery(document).ready(function($) {
+	
+	$('.lightbox_trigger').click(function(e) {
+		
+		//prevent default action (hyperlink)
+		e.preventDefault();
+		
+		//Get clicked link href
+		var image_href = $(this).attr("href");
+		
+		/* 	
+		If the lightbox window HTML already exists in document, 
+		change the img src to to match the href of whatever link was clicked
+		
+		If the lightbox window HTML doesn't exists, create it and insert it.
+		(This will only happen the first time around)
+		*/
+		
+		if ($('#lightbox').length > 0) { // #lightbox exists
+			
+			//place href as img src value
+			$('#content').html('<img src="' + image_href + '" />');
+		   	
+			//show lightbox window - you could use .show('fast') for a transition
+			$('#lightbox').show();
+		}
+		
+		else { //#lightbox does not exist - create and insert (runs 1st time only)
+			
+			//create HTML markup for lightbox window
+			var lightbox = 
+			'<div id="lightbox">' +
+				'<p>Click to close</p>' +
+				'<div id="content">' + //insert clicked link's href into img src
+					'<img src="' + image_href +'" />' +
+				'</div>' +	
+			'</div>';
+				
+			//insert lightbox HTML into page
+			$('body').append(lightbox);
+		}
+		
+	});
+	
+	//Click anywhere on the page to get rid of lightbox window
+	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+		$('#lightbox').hide();
+	});
+
+});
+</script>    
+        
+    </section> 
+      
+    <footer>
+    
+      <h5>&copy; Joshua Rose, 2017.  All Rights Reserved.</h5>
+    
+    </footer>
+      
+      
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Design | Joshua Rose</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Social Media Icons--> 
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn:600i,700i" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/Rose-favicon.png">
+    
+    <style>
+
+		section .col-12 {
+			text-align: center;
+		}
+		
+		section button {
+			margin-top: 2em;
+		}
+		
+		section P {
+			max-width: 1000px; 
+			text-align: center;
+		}
+		
+		@media (min-width: 1024px) {
+			section {
+				margin-top: 150px;
+				margin-bottom: 200px;
+			}
+		}
+
+    </style>
+  </head>
+  
+  <body>
+
+    <header>
+    
+      <div class="desktop-nav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a> 
+          <a href="showreel.html">Showreel</a>
+          <a href="photography.html">Photography</a>    
+          <a class="current-item" href="web.html">Web Design</a>
+          <a href="contact.html">Contact</a>    
+        </nav>
+      </div>
+        
+      <div class="mobile-nav">
+        <div id="mySidenav" class="sidenav">
+         <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+			<a href="about.html"><li>About</li></a>  
+            <a href="showreel.html"><li>Showreel</li></a>
+            <a href="photography.html"><li>Photography</li></a>  
+            <a class="current-item" href="web.html"><li>Web Design</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>    
+        </div>      
+        
+      <a href="javascript:void(0)" id="hamburger" class="closebtn" onclick="myFunction(this);toggleNav();">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>  
+		  
+		<script>
+		function toggleNav() {
+    var element = document.getElementById("mySidenav");
+    if (element.style.width == "250px") {
+        element.style.width = "0px";
+    } else {
+        element.style.width = "250px";
+    }
+} 
+		</script>
+    <script>
+    function myFunction(x) {
+             x.classList.toggle("change");
+           }    
+    </script>
+
+    </div>      
+    
+    </header>
+      
+    <section>
+      <div class="row">
+        <div class="col-12">
+		  <h3>Web Design</h3>
+		</div>
+	  </div>
+	<div class="row">
+	  <div class="col-12">
+	    <h4>Please note: web examples are currently under construction and will be online for viewing soon.</h4>
+	  </div>
+	</div>	
+	<div class="row">
+	  <div class="col-12">
+	    <a href="web_joshuarose.html">
+		  <img src="images/webthumb-JRP.jpg" alt="Joshua Rose"/> 
+		</a>
+	  </div>
+	</div>	
+	<div class="row">
+	  <div class="col-6">
+	    <a href="web_agaentertainment.html">
+	      <img src="images/webthumb-AGA.jpg" alt="AGA Entertainment"/>
+	    </a>
+	  </div>
+	  <div class="col-6">
+	    <a href="web_tylerscottillusionist.html">
+		  <img src="images/webthumb-TSI.jpg" alt="Tyler Scott Illusionist"/> 
+		</a>
+      </div>
+	</div>
+	<!--<div class="row">
+	  <div class="col-6">
+	    <a href="web_innovativesolutions.html">
+		  <img src="http://www.scitechnow.org/wp-content/uploads/2017/08/s0647YV-asset-mezzanine-16x9-WktIc9b-480x270.jpg" alt="Innovative Solutions, LLC"/> 
+		</a>
+	  </div>
+	  <div class="col-6">
+	    <a href="#">
+		  <img src="images/Capture.JPG"/> 
+		</a> 
+	  </div>
+	</div>-->
+    </section> 
+      
+    <footer>
+    
+      <h5>&copy; Joshua Rose, 2017.  All Rights Reserved.</h5>
+    
+    </footer>
